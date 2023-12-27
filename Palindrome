@@ -1,0 +1,15 @@
+let str = "Madam"
+
+const checkPlaindrome =()=>{
+  
+let revStr = str.toLowerCase().split("").reverse().join("")
+
+if(revStr === str.toLowerCase())
+{
+  return true
+}
+return false
+}
+
+console.log(checkPlaindrome(str))
+
