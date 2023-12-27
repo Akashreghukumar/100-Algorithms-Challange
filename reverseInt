@@ -1,0 +1,12 @@
+// reverseInt
+
+let n= -356
+
+let revN= parseInt(n.toString().split("").reverse().join(""))
+
+if(n<0)
+{
+  revN = revN * -1
+}
+
+console.log(revN)
