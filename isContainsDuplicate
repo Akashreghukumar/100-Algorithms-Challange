@@ -1,0 +1,29 @@
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+
+// check the string contains duplicate
+
+let str = "abcdeeeee"
+charSet = {}
+
+const isDuplicate = ()=>{
+ if(str.length > 128)
+  {
+    return true  
+  }
+  else{
+      for(let i=0;i<str.length;i++)
+      {
+        if(str[i] in charSet)
+        {
+            return true
+        }
+        charSet[str[i]] = true
+      }
+      return false
+  }
+    
+} 
+
+console.log(isDuplicate(str))
+
